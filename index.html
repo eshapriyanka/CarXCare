@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>CarXCare</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>🚗 Welcome to CarXCare</h1>
+    </header>
+
+    <section>
+      <h2>Schedule Your Customer Care Appointment</h2>
+      <form id="appointmentForm">
+        <label for="name">Your Name</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter your name"
+          required
+        />
+
+        <label for="vehicle">Vehicle Model</label>
+        <input
+          type="text"
+          id="vehicle"
+          name="vehicle"
+          placeholder="Enter your vehicle model"
+          required
+        />
+
+        <label for="date">Appointment Date</label>
+        <input type="date" id="date" name="date" required />
+
+        <label for="email">Email Address</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email"
+          required
+        />
+
+        <button type="submit">Schedule Now</button>
+      </form>
+      <div
+        id="successMessage"
+        class="success-message"
+        style="display: none"
+      ></div>
+    </section>
+
+    <script src="document.js"></script>
+  </body>
+</html>
